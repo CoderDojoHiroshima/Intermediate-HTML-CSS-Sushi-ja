@@ -1,0 +1,67 @@
+html {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+					flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+			-ms-flex-align: center;
+					align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+			-ms-flex-pack: center;
+					justify-content: center;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.glasses {
+	position: absolute;;
+	width: 212px;
+	height: 65px;
+	top: 60px;
+	left: 120px;
+}
+
+.glasses:hover .glass {
+	background-image: -webkit-linear-gradient(top, #ff7660, #ff427d 70%);
+	background-image: linear-gradient(to bottom, #ff7660, #ff427d 70%);
+}
+.glasses .g-top {
+	position: absolute;
+	height: 15px;
+	width: 112px;
+	background-color: #3C3C3C;
+	top: 5px;
+	left: -5px;
+	border-radius: 5px;
+}
+.glasses .glass {
+	position: absolute;
+	height: 45px;
+	width: 50px;
+	background-image: -webkit-linear-gradient(top, #4DE2DC, #3888D1 70%);
+	background-image: linear-gradient(to bottom, #4DE2DC, #3888D1 70%);
+	border: 10px solid #3C3C3C;
+}
+.glasses .g-left {
+	left: -2;
+	-webkit-transform: rotate(2deg);
+			-ms-transform: rotate(2deg);
+					transform: rotate(2deg);
+	border-radius: 12px 12px 33px 29px;
+}
+.glasses .g-right {
+	left: 55px;
+	-webkit-transform: rotate(-2deg);
+			-ms-transform: rotate(-2deg);
+					transform: rotate(-2deg);
+	border-radius: 12px 12px 29px 33px;
+}
